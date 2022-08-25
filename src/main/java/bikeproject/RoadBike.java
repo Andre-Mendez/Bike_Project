@@ -1,6 +1,6 @@
 package bikeproject;
 
-public class RoadBike extends Bike{
+public class RoadBike extends Bike implements RoadParts{
 
     private int  tyreWidth, postHeight;
 
@@ -26,4 +26,24 @@ public class RoadBike extends Bike{
         super.printDescription();
         System.out.println("This Roadbike bike has " + this.tyreWidth + "mm tyres and a post height of " + this.postHeight + ".");
     }//end method printDescription
+
+    @Override
+    public int getTyreWidth() {
+        return tyreWidth;
+    }
+
+    @Override
+    public void setTyreWidth(int newValue) {
+        this.tyreWidth = newValue;
+    }
+
+    @Override
+    public int getPostHeight() {
+        return postHeight;
+    }
+
+    @Override
+    public void setPostHeight(int newValue) {
+        this.postHeight = newValue;
+    }
 }//end class RoadBike

@@ -13,6 +13,9 @@ public class BikeDriver {
         bike2.printDescription();
         bike3.printDescription();
         bike4.printDescription();
+
+        bike1.setPostHeight(22);
+        bike1.printDescription();
     }//end method main
 
 }//end class BikeDriver
